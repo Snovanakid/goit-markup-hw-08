@@ -1,0 +1,97 @@
+/* ------------------BENEFITS---------------- */
+
+.benefits {
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            // display: flex;
+            padding-left: 0;
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-wrap: nowrap;
+                }
+        }
+    &__item {
+        width: 100%;
+            @media screen and (min-width: 768px) {
+                max-width: calc((100% - 30px) / 2);
+            } 
+    }
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__text {
+        margin-top: 10px;
+        margin-bottom: 0;
+        line-height: 1.7;
+        color: var(--secondary-text);
+    }
+}
+
+.benefits__title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+        @media screen and (min-width: 767px) {
+            text-align: left;
+        }
+        &.astronaut::before {
+            content: '';
+            display: block;
+            height: 120px;
+            background-image: url('../images/astronaut.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            background-color: var(--secondary-bg-color);
+        }
+        &.laptop::before {
+            content: '';
+            display: block;
+            height: 120px;
+            background-image: url('../images/laptop.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            background-color: var(--secondary-bg-color);
+        }
+        &.clock::before {
+            content: '';
+            display: block;
+            height: 120px;
+            background-image: url('../images/clock.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            background-color: var(--secondary-bg-color);
+        }
+        &.antena::before {
+            content: '';
+            display: block;
+            height: 120px;
+            background-image: url('../images/antenna.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            background-color: var(--secondary-bg-color);
+        }
+}
+/* ------------------BENEFITS---------------- */

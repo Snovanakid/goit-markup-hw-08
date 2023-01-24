@@ -1,0 +1,46 @@
+/* ----------------SERVICES----------------- */
+.services {
+    margin-bottom: 0;
+    padding-bottom: 94px;
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+        &__title {
+            margin-top: 0;
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 36px;
+            line-height: 1.17;
+        }
+        &__list {
+            display: flex;
+            margin: 0;
+            padding-left: 0;
+        }
+        &__pictures {
+            display: block;
+        }
+        &__description {
+            font-weight: 700;
+            line-height: 1.14;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--main-background-color);
+            background-color: rgba(47, 48, 58, 0.8);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+        }
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+        &__conteiner {
+            position: relative;
+        }
+}
+/* ----------------SERVICES----------------- */

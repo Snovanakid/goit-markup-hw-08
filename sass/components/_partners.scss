@@ -1,0 +1,81 @@
+/* ----------------PARTNERS-------------- */
+.partners {
+    padding-top: 60px;
+    padding-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+        &__title {
+            margin: 0 0 30px;
+            font-size: 28px;
+            line-height: 1.16;
+            text-align: center;
+            letter-spacing: 0.03em;
+                @media screen and (min-width: 1200px) {
+                    font-size: 36px;
+                }
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            // gap: 30px;
+            justify-content: center;
+            padding-left: 0;
+            margin: 0;
+            @media screen and (min-width: 768px) {
+                gap: 30px;
+            }
+            @media screen and (min-width: 480px) {
+                gap: 30px;
+            }
+            @media screen and (max-width: 479px) {
+                gap: 15px;
+            }
+        }
+        &__item {
+            display: inline-block;
+            width: calc((100% - 30px) / 2);
+                @media screen and (min-width: 480px) {
+                    width: calc((100% - 30px) / 2);
+                }
+                @media screen and (min-width: 768px) {
+                    width: calc((100% - 60px) / 3);
+                }
+                @media screen and (min-width: 1200px) {
+                    width: calc((100% - 150px) / 6);
+                }
+            // max-width: 210px;
+            height: 92px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            transition: border-color 250ms var(--timing-function);
+                // @media screen and (min-width: 480px) {
+                //     width: 210px;
+                // }
+                &:hover,
+                &:focus {
+                    border-color: var(--brand-blue-color);
+                }
+                &:hover .partners__logo {
+                    fill: var(--brand-blue-color);
+                }
+        }
+        &__link {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: border-color 250ms var(--timing-function);
+                &:focus .partners__logo {
+                    fill: var(--brand-blue-color);
+                }
+        }
+        &__logo {
+            display: flex;
+            fill: var(--icons-default-color);
+            transition: fill 250ms var(--timing-function);
+        }
+}
+/* ----------------PARTNERS-------------- */
