@@ -56,8 +56,10 @@
 }
 
 .portrait {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
+    
     &-description {
         padding-top: 30px;
         padding-bottom: 24px;
