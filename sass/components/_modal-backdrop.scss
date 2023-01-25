@@ -137,7 +137,11 @@
     }
 }
 
-
+.input-message::placeholder {
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+    }
+}
 
 .modal-field.comment {
     margin-bottom: 20px;
@@ -210,4 +214,6 @@
             background-color: #188CE8;
         }
 }
+
+
 /* ---------------MODAL---BACKDROP-------------- */
